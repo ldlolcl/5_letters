@@ -14,7 +14,7 @@ for _ in range(100):
 		c -= 1
 		print(Fore.WHITE + 'Победа! Слово ' + Fore.GREEN + W + Fore.WHITE +' угадано с ' + str(c) + ' попыток!' + Style.RESET_ALL)
 		break
-	print(Fore.WHITE + 'Попытка №' + str(c) + ':' + Style.RESET_ALL, end=' ')
+	print(Fore.WHITE + 'Попытка №' + str(c) + ':' + Style.RESET_ALL)
 	for i in l:
 		if i in g:
 			print(Fore.GREEN + i + Style.RESET_ALL, end=' ')
@@ -33,7 +33,7 @@ for _ in range(100):
 	V = str(input('\nВведите слово: ')).lower()
 	if V in words and len(V) == 5:
 		print(Fore.WHITE + 'Результат: ' + Style.RESET_ALL, end='')
-		for i in range(4+1):
+		for i in range(5):
 			if V[i] == W[i]:
 				g.append(V[i])
 				answer[i] = V[i]
